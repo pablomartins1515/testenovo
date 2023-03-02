@@ -3,18 +3,15 @@ import { Header } from "../componentes/Header"
 import { Sidebar } from "../componentes/Sidebar"
 import { Video } from "../componentes/Video"
 import { useParams } from "react-router-dom"
-
-import ScrollToTop from "../componentes/ScrollToTop"
-
-import { MouseEvent } from 'react';
-
+import { ScrollToTop } from "../componentes/ScrollToTop"
 
 
 export function Blog() {
    
     const { slug } = useParams<{ slug:string }>()
 
-    return (
+    
+      return (
         
         <div>            
             <Header />
@@ -29,12 +26,14 @@ export function Blog() {
                     </div>
 
                     <div className="  flex-1 flex justify-center w-full ">                    
-                    
                     <Sidebar />
                     <ScrollToTop/>
                     
-                    </div>             
+                    </div> 
 
+                
+                
+                          
             </main>       
         </div>        
     )
